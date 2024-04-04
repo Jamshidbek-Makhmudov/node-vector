@@ -1,0 +1,8 @@
+
+ Bugungi va kechagi darsga aloqador vazifalar:
+1) node-fetch yoki axios kabi request library yozish
+2) expressni oxiriga yetkazib mukammallashtirish - middleware, post, put, delete, error handler, authorization
+3) net moduli orqali chat application yozish
+
+Shu vazifalarni bajarish orqali mavzularni ancha yaxshi o'zlashtirib olishlaringiz mumkin. Iloji boricha 100% bajarib kelinglar.
+
