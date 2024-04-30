@@ -1,0 +1,11 @@
+{
+  "name": "lesson-10-sample",
+  "version": "1.0.0",
+  "description": "learning purpose",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm run test"
+  },
+  "author": "Jamshidbek-Makhmudov",
+  "license": "MIT"
+}

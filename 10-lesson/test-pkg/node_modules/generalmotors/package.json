@@ -1,0 +1,24 @@
+{
+  "name": "generalmotors",
+  "version": "1.0.1",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "underscore": "git+https://github.com/jashkenas/underscore.git"
+  },
+  "keywords": [],
+  "author": "husniddin96",
+  "license": "MIT",
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/husniddin96/mathjs.git"
+  },
+  "bugs": {
+    "url": "https://github.com/husniddin96/mathjs/issues"
+  },
+  "homepage": "https://github.com/husniddin96/mathjs#readme",
+  "description": ""
+}

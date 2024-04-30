@@ -1,0 +1,23 @@
+{
+  "name": "custom-packages",
+  "version": "1.0.0",
+  "description": "learning purpose",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm run test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jamshidbek-Makhmudov/custom-npm-packages.git"
+  },
+  "keywords": [
+    "npm",
+    "package"
+  ],
+  "author": "Jamshidbek-Makhmudov",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Jamshidbek-Makhmudov/custom-npm-packages/issues"
+  },
+  "homepage": "https://github.com/Jamshidbek-Makhmudov/custom-npm-packages#readme"
+}

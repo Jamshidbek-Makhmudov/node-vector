@@ -1,0 +1,3 @@
+import statefulValueProp from "https://msakbar.github.io/statefulValueProp.js" ;
+
+console.log(statefulValueProp());  

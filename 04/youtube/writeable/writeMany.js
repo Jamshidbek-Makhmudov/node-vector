@@ -1,3 +1,4 @@
+/** activity monitor */
 /**create file and write 1000_000 times into it */
 // const fs = require('node:fs/promises');
 // console.time("writeMany");

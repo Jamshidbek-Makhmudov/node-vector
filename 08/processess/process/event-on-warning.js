@@ -1,0 +1,2 @@
+process.on('warning', (warning) => {
+})

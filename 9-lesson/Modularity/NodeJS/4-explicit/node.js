@@ -1,0 +1,32 @@
+'use strict';
+
+module.exports = Object.freeze({
+  util: require('node:util'),
+  path: require('node:path'),
+  buffer: require('node:buffer'),
+  os: require('node:os'),
+  v8: require('node:v8'),
+  vm: require('node:vm'),
+  'child_process': require('node:child_process'),
+  'worker_threads': require('node:worker_threads'),
+  stream: require('node:stream'),
+  fs: require('node:fs'),
+  fsp: require('node:fs/promises'),
+  crypto: require('node:crypto'),
+  zlib: require('node:zlib'),
+  readline: require('node:readline'),
+  'async_hooks': require('node:async_hooks'),
+  timers: {
+    ...require('node:timers'),
+    promises: require('node:timers/promises'),
+  },
+  events: require('node:events'),
+  dns: require('node:dns'),
+  net: require('node:net'),
+  tls: require('node:tls'),
+  http: require('node:http'),
+  https: require('node:https'),
+  http2: require('node:http2'),
+  dgram: require('node:dgram'),
+  process,
+});

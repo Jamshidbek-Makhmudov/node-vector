@@ -1,0 +1,17 @@
+{
+  "scripts": {
+    "install": "node-gyp rebuild",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "gypfile": true,
+  "name": "cpp-addon",
+  "version": "1.0.0",
+  "main": "index.js",
+  "dependencies": {
+    "node-addon-api": "^8.0.0"
+  },
+  "author": "Jamshidbek-Makhmudov",
+  "license": "MIT",
+  "description": ""
+}

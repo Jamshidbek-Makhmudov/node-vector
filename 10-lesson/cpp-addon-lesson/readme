@@ -1,0 +1,9 @@
+npm init -y
+
+npm install -g node-gyp
+
+npm install node-addon-api
+#binding.gyp file ni yaratib olish kerak
+node-gyp configure
+
+node-gyp build
