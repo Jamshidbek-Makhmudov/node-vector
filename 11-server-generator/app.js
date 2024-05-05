@@ -1,9 +1,5 @@
-
-
 const app = require('express')();
-
 const { localStorage } = require('./async-local-storage')
-
 const { logger } = require('./logger');
 
 app.use((req, res, next) => {
