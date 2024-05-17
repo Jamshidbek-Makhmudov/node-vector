@@ -1,0 +1,16 @@
+{
+  "name": "promise",
+  "version": "1.0.0",
+  "main": "async-cb.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "v8": "^0.1.0",
+    "xpress": "^2.4.6"
+  }
+}

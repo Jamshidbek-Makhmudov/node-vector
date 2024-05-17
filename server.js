@@ -1,38 +1,77 @@
-// UserService.js
-const MailerService = require("./MailerService");
-class UserService {
-  createUser(user) {
-    // ... user creation logic
-    MailerService.sendWelcomeEmail(user);
-  }
-}
-module.exports = UserService;
-// MailerService.js const UserService =
-require("./UserService");
-class MailerService {
-  sendWelcomeEmail(user) {
-    const username = UserService.getUserById(user.id); // This creates the circulardependency
-    // ... email sending logic with username
-  }
-}
-module.exports = MailerService;
+// Create a function which returns sum of two values. When function called multiple times, it shouldn't calculate for the same args.
+function calculate() {
+	const map = new Map()
+	
+	return function (a, b) {
+		const key = [a, b].join(":")
+		if (map.has(key)) { 
+			console.log("from cache");
+			
+			return map.get(key)
+		}
+		console.log("new value");
+		const value= a+b
+		map.set(key, value)
+		return value;
+	 }
+};
+const check = calculate()
+console.log(check(2,1));
+console.log(check(2,1));
 
-// UserService.js
-class UserService {
-  constructor(mailerService) {
-    this.mailerService = mailerService;
-  }
-  createUser(user) {
-    // ...user creation logic
-    this.mailerService.sendWelcomeEmail(user);
-  }
-}
-module.exports = UserService;
-// Usage (index.js)
-const MailerService = require("./MailerService");
-const UserService = require("./UserService");
-const mailerService = newMailerService();
-const userService = newUserService(mailerService);
-userService.createUser({ id: 1, name: "John Doe" });
 
-/**dependency injection */
+// ////
+new Promise(function (resolve) {
+    console.log('new promise')
+    resolve()
+}).then(() => {
+    console.log('then 1')
+})
+
+async function foo() {
+    console.log('async function')
+}
+
+foo().then(() => {
+    console.log('then 2')
+})
+
+setImmediate(() => {
+    console.log('immediate 1')
+})
+
+setTimeout(() => {
+    console.log('timeout 1')
+})
+
+process.nextTick(() => {
+    console.log('nextTick 1')
+})
+
+queueMicrotask(() => {
+    console.log('microtask 1')
+})
+
+setTimeout(() => {
+    console.log('timeout 2')
+})
+
+setImmediate(() => {
+    console.log('immediate 2')
+})
+
+process.nextTick(() => {
+    console.log('nextTick 2')
+})
+
+process.nextTick(() => {
+    console.log('nextTick 3')
+})
+
+queueMicrotask(() => {
+    console.log('microtask 2')
+});
+
+//////
+
+
